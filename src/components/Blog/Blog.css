@@ -1,0 +1,36 @@
+.blog-section {
+  padding-block: 6rem;
+  background-color: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+}
+.benefitSpan {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background-color: rgba(255, 140, 0, 0.15);
+  color: #ff8c00;
+  font-size: 14px;
+  border: 1px solid #ff8c00;
+}
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33.333%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(249,115,22,0.05), transparent);
+}
+.gradient-btn {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  color: white;
+  border-radius: 1rem;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px); 
+  color: white;
+}

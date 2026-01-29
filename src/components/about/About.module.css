@@ -1,0 +1,115 @@
+.heroSection {
+  min-height: 60vh;
+  background-color: #0b0b0b;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  color: #fff;
+  padding-top: 96px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #222;
+}
+
+.glowEffect {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(253, 126, 20, 0.15) 0%,
+    transparent 70%
+  );
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #22150B;
+  color: #fd7e14;
+  border: 1px solid #fd7d143c;
+  padding: 8px 25px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5625rem;
+  line-height: 1.3;
+}
+
+.highlight {
+  color: #fd7e14;
+}
+
+.description {
+  color: #a0a0a0;
+  max-width: 750px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.statCard {
+  background-color: rgba(20, 20, 20, 0.6);
+  border: 1px solid #222;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 200px;
+  text-align: center;
+  backdrop-filter: blur(5px); 
+  transition: all 0.3s ease;
+}
+
+.statIcon {
+  font-size: 1.5rem;
+  color: #FF6900;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.statNum {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fd7e14;
+  margin-bottom: 5px;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  color: #aaa;
+}

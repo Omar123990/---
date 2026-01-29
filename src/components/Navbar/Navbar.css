@@ -1,0 +1,106 @@
+/* Navbar.css */
+.h-48 {
+  height: 3rem;
+}
+.w-48 {
+  width: 3rem;
+}
+.active {
+  color: white !important;
+  background: linear-gradient(
+    to right,
+    oklch(70.5% 0.213 47.604),
+    oklch(64.6% 0.222 41.116)
+  );
+  padding-block: 0.625rem;
+  padding-inline: 1.25rem;
+  border-radius: 1.5rem;
+}
+.bg-navbar {
+  background-color: #161616;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-link {
+  color: gray;
+  transition: color 0.3s;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+.primary-color {
+  color: oklch(75% 0.183 55.934);
+}
+.serchHover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.serchHover:hover {
+  border: 1px solid rgb(48, 48, 48);
+  transition: all 0.3s ease;
+}
+.serchHover i {
+  color: gray;
+  transition: all 0.3s ease;
+}
+.serchHover:hover i {
+  color: oklch(75% 0.183 55.934);
+}
+.navbarButton {
+  background: linear-gradient(
+    to right,
+    oklch(70.5% 0.213 47.604),
+    oklch(64.6% 0.222 41.116)
+  );
+  color: white;
+  padding-inline: 1.5rem;
+  padding-block: 0.8rem;
+  border-radius: 2rem;
+  border: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.navbarButton:hover {
+  transform: translate(0, -2px);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+}
+.imgHover:hover img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1a1a1a;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .custom-nav-ul {
+    border: none !important;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-actions {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .navbarButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.categories-section {
+  background-color: #111111;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid rgba(249, 115, 22, 0.1);
+  border-top: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.section-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background-color: #1c120b;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  color: #f97316;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.section-subtitle {
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+.category-card {
+  position: relative;
+  display: block;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #161616;
+  border: 1px solid #262626;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  border-color: rgba(249, 115, 22, 0.3); 
+  transform: translateY(-0.25rem);
+  background: linear-gradient(135deg, #161616 0%, #1f1f1f 100%);
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f97316;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.category-card:hover .icon-box {
+  background-color: #f97316;
+}
+
+.category-card:hover .icon-box i {
+  color: #ffffff;
+}
+
+.category-card h5 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-card span {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
