@@ -34,18 +34,18 @@ export default function Footer() {
             </h5>
             <ul className="footer-links">
               <li><Link to="/">الرئيسية</Link></li>
-              <li><Link to="/">المدونة</Link></li>
-              <li><Link to="/">من نحن</Link></li>
+              <li><Link to="blog">المدونة</Link></li>
+              <li><Link to="about">من نحن</Link></li>
             </ul>
           </div>
 
           <div className="col-lg-2">
             <h5 className="footer-title">التصنيفات</h5>
             <ul className="footer-links">
-              <li><Link to="/">إضاءة</Link></li>
-              <li><Link to="/">بورتريه</Link></li>
-              <li><Link to="/">مناظر طبيعية</Link></li>
-              <li><Link to="/">تقنيات</Link></li>
+              <li><Link to="blog">إضاءة</Link></li>
+              <li><Link to="blog">بورتريه</Link></li>
+              <li><Link to="blog">مناظر طبيعية</Link></li>
+              <li><Link to="blog">تقنيات</Link></li>
             </ul>
           </div>
 
