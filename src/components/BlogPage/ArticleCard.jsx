@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router'; // أو react-router زي ما عندك
+import { Link } from 'react-router';
 import styles from './BlogPage.module.css';
 
 const ArticleCard = ({ post, viewMode }) => {
   const isList = viewMode === 'list';
-  const articleSlug = post.title.replaceAll(' ', '-');
+  const articleSlug = post.title.replace('/\s+/g', '-');
 
   return (
     <Link 

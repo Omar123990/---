@@ -13,7 +13,7 @@
 }
 .custom-row:hover{
   border: 1px solid rgb(249, 115, 22);
-  box-shadow: 0 10px 30px rgba(249, 116, 22, 0.2);/** دي بره الديزاين */
+  box-shadow: 0 10px 30px rgba(249, 116, 22, 0.2);
 }
 .custom-row h2{
   transition: all 0.3s ease;

@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router"; // 1. استيراد Link
+import { Link } from "react-router"; 
 import "./BlogCol.css";
 
 export default function BlogCol({ post }) {
   if (!post) return null;
 
-  const articleSlug = post.title.replaceAll(' ', '-');
+  const articleSlug = post.title.replace('/\s+/g', '-');
 
   return (
     <Link to={`/blog/${articleSlug}`} className="custom-row text-decoration-none">

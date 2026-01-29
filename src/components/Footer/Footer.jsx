@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router"; // تأكد من المسار الصحيح
+import { Link } from "react-router"; 
 import "./Footer.css";
 
 export default function Footer() {

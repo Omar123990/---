@@ -1,4 +1,3 @@
-/* --- Page Wrapper --- */
 .pageWrapper {
   background-color: #0b0b0b;
   min-height: 100vh;
@@ -6,7 +5,6 @@
   padding-bottom: 50px;
 }
 
-/* --- Hero Section --- */
 .heroWrapper {
   position: relative;
   height: 80vh;
@@ -15,7 +13,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: -80px; /* Overlap Header */
+  margin-top: -80px;
   padding-top: 80px;
 }
 
@@ -49,7 +47,6 @@
   justify-content: center;
 }
 
-/* Breadcrumbs */
 .breadcrumbs {
   position: absolute;
   top: 100px;
@@ -108,10 +105,8 @@
   top: 100px;
   z-index: 10;
   
-  /* التغيير هنا: !important عشان يجبره يسمع الكلام وميمطش */
   height: fit-content !important; 
   
-  /* ودول عشان نضمن إنه مياخدش طول زيادة */
   min-height: 0;
   display: block;
 }
@@ -201,7 +196,6 @@
   background-color: #e87010;
 }
 
-/* --- Content Styling --- */
 .quoteBox {
   border-right: 4px solid #fd7e14;
   background: linear-gradient(90deg, rgba(253,126,20,0.1), transparent);

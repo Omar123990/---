@@ -42,7 +42,7 @@ export default function AboutTeam() {
               
               <div className={styles.avatarWrapper}>
                 <img 
-                  src={member.avatar || "https://i.pravatar.cc/150"} 
+                  src={member.avatar || member.image} 
                   alt={member.name} 
                   className={styles.avatar} 
                 />

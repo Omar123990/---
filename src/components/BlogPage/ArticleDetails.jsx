@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router'; // تأكد إنها dom
+import { useParams, Link } from 'react-router';
 import axios from 'axios';
 import styles from './ArticleDetails.module.css';
 import ArticleCard from '../BlogPage/ArticleCard';
@@ -24,7 +24,7 @@ export default function ArticleDetails() {
     setLoading(true);
     axios.get('/posts.json').then((res) => {
       const allPosts = res.data.posts;
-      const currentPost = allPosts.find(p => p.title.replaceAll(' ', '-') === title);
+      const currentPost = allPosts.find(p => p.title.replace('/\s+/g', '-') === title);
       setPost(currentPost);
       if (currentPost) {
         const related = allPosts
@@ -123,14 +123,11 @@ export default function ArticleDetails() {
             </div>
           </div>
 
-          {/* --- Main Content --- */}
           <div className="col-lg-8 order-1 order-lg-1">
-             {/* Quote */}
              <div className={styles.quoteBox}>
                 <p>"{post.excerpt}"</p>
              </div>
 
-             {/* Article Body */}
              <div className={styles.articleText}>
                 <p className="lead mb-5">تصوير البورتريه هو فن التقاط جوهر الإنسان في صورة واحدة...</p>
                 {articleContent.map((section, idx) => (
@@ -143,7 +140,6 @@ export default function ArticleDetails() {
                ))}
              </div>
 
-             {/* Tags Box */}
              <div className={styles.tagsBox}>
                 <span className="text-warning fw-bold ms-3">
                   <i className="fa-solid fa-tags ms-2"></i> الوسوم
@@ -155,7 +151,6 @@ export default function ArticleDetails() {
                 </div>
              </div>
 
-             {/* Share Box */}
              <div className={styles.shareBox}>
                 <span className="text-white fw-bold ms-3">
                   <i className="fa-solid fa-share-nodes ms-2 text-warning"></i> شارك المقال
@@ -168,7 +163,6 @@ export default function ArticleDetails() {
                 </div>
              </div>
 
-             {/* Large Author Box */}
              <div className={styles.authorBoxLarge}>
                 <div className="d-flex align-items-center gap-4">
                    <img src={post.author.avatar} alt={post.author.name} className={styles.authorAvatarLg} />
@@ -183,7 +177,6 @@ export default function ArticleDetails() {
         </div>
       </div>
 
-      {/* --- Related Posts --- */}
        <div className="container py-5 mt-5 border-top border-secondary border-opacity-25">
          <div className="d-flex justify-content-between align-items-center mb-4">
             <h3 className="text-white m-0">مقالات قد تعجبك</h3>
